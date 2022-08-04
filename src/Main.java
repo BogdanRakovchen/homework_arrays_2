@@ -9,7 +9,6 @@ public class Main {
             arr[i] = random.nextInt(100_000) + 100_000;
         }
         Arrays.sort(arr);
-        System.out.println(Arrays.toString(arr));
         return arr;
     }
 
@@ -21,7 +20,7 @@ public class Main {
         System.out.println("Задача №1");
         System.out.println();
 
-        double generalSumOfMonth = 0;
+        float generalSumOfMonth = 0.0f;
 
         for(int sum : arr) {
             generalSumOfMonth += sum;
@@ -43,8 +42,8 @@ public class Main {
         System.out.println("Задача №3");
         System.out.println();
 
-        double computedAverageSumOfMonth = generalSumOfMonth / arr.length;
-        System.out.println("Средняя сумма трат за месяц составила " + (int) computedAverageSumOfMonth * 1 + " рублей");
+        float computedAverageSumOfMonth = generalSumOfMonth / arr.length;
+        System.out.println("Средняя сумма трат за месяц составила " + computedAverageSumOfMonth + " рублей");
 
 
 
